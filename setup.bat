@@ -1,1 +1,1 @@
-set path=%path%;c\cygwin\bin
+set path=%path%;c:\cygwin\bin
