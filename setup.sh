@@ -1,4 +1,4 @@
-#!bin/bash
+#/bin/bash
 apt-get update
-apt-get -y install build-essentials
+apt-get -y install build-essential
 
