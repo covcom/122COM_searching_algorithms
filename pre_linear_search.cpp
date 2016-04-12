@@ -15,6 +15,7 @@ bool linear_search( vector<int> sequence, int value )
 /* this function is designed to test that your function produces the correct results */
 int main()
 {
+    int errflg = 0;
     const int size = 33;
     vector<int> sequence;
     sequence.resize(size);
@@ -45,7 +46,9 @@ int main()
             " search for " << test.value << " test, got " <<
             (result ? "true" : "false") << " expected " <<
             (test.expected ? "true" : "false") << endl;
+
+        if( result != test.expected ) errflg += 1;
     }
 
-    return 0;
+    return errflg;
 }
