@@ -1,12 +1,16 @@
+#!/usr/bin/python3
+import sys
+
 def search_string( text, substr ):
     # COMPLETE ME
 
     return False
 
+def main():
+    errflg = 1
 
-if __name__ == '__main__':
     text = "This is the big piece of text that we are going to be searching in";
-    
+
     if search_string( text, "This" ) != True:
         print( "Failed \"This\" test." )
     
@@ -21,4 +25,10 @@ if __name__ == '__main__':
     
     else:
         print( "Passed all tests." )
+        errflg = 0
+
+    return errflg
+
+if __name__ == '__main__':
+    sys.exit(main())
     
