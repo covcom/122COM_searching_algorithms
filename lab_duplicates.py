@@ -14,7 +14,7 @@ def main():
     # COMPLETE ME
 
     # === confirm to the user what they entered ======
-    print( "You entered :", ', '.join( inputs ) )
+    print( "You entered :", ', '.join( [ str(i) for i in inputs ] ) )
 
 if __name__ == '__main__':
     sys.exit(main())
