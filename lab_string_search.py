@@ -13,6 +13,9 @@ def main():
 
     if search_string( text, "This" ) != True:
         print( "Failed \"This\" test." )
+
+    elif search_string( text, "Thiss" ) != False:
+        print( "Failed \"Thiss\" test." )        
     
     elif search_string( text, "big" ) != True:
         print( "Failed \"big\" test." )

@@ -18,6 +18,10 @@ int main()
     {
         cerr << "Failed \"This\" test." << endl;
     }
+    else if( search_string( text, "Thiss" ) != false )
+    {
+        cerr << "Failed \"Thiss\" test." << endl;    
+    }
     else if( search_string( text, "big" ) != true )
     {
         cerr << "Failed \"big\" test." << endl;
