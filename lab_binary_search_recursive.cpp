@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-bool binary_search( vector<int> &sequence, int value, int start=-1, int end=-1 )
+bool binary_search( vector<int> sequence, int value, int start=-1, int end=-1 )
 {
     // COMPLETE ME
 
@@ -26,7 +26,7 @@ int main()
 
     };
     array<Test,4> testing = {{ {96,true}, {33, true}, {31, false}, {76, false} }};
-    
+
     // populate sequence
     int count = 0;
     for( int &i : sequence )
@@ -40,7 +40,7 @@ int main()
     {
         bool result = binary_search( sequence, test.value );
 
-        cout << (result == test.expected ? "Passed" : "Failed") << 
+        cout << (result == test.expected ? "Passed" : "Failed") <<
             " search for " << test.value << " test, got " <<
             (result ? "true" : "false") << " expected " <<
             (test.expected ? "true" : "false") << endl;
